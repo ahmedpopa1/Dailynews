@@ -1,0 +1,76 @@
+/* postCard.module.css */
+
+.container {
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Slightly larger border radius */
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem;
+  width: 100%; /* Ensure it fills the column */
+  max-width: 500px; /* Adjust as needed for larger cards */
+}
+
+.container:hover {
+  transform: scale(1.05); /* Slightly larger hover effect */
+}
+
+.top {
+  position: relative;
+}
+
+.image {
+  max-width: 300;
+  height: 300;
+  display: block;
+}
+
+.date {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem; /* Slightly larger font size */
+}
+
+.bottom {
+  padding: 1.5rem; /* More padding for larger cards */
+}
+
+.title {
+  font-size: 1.75rem; /* Larger title font size */
+  margin: 0;
+  color: #333;
+}
+
+.desc {
+  font-size: 1.1rem; /* Larger description font size */
+  color: #666;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.link {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; /* Larger gap between cards */
+  justify-items: center;
+  margin-left: 80px; 
+  width: 1200px; /* Adjust as needed */
+  max-height: 400;
+  min-height: 400;
+}
